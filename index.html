@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ban Lab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="game-container">
+  <div id="ui-panel">
+    <span id="score-display">Pontos: 0</span>
+    <span id="timer-display">Tempo: 30s</span>
+  </div>
+
+  <div id="start-screen" class="overlay">
+    <div class="reticle" aria-hidden="true"><i></i><i></i><i></i></div>
+    <h1 id="game-title">Ban Lab</h1>
+    <p class="subtitle" id="game-subtitle">Treino de mira em 30 segundos</p>
+    <p id="result" class="hidden"></p>
+    <div class="rules">
+      <span>Acerto <b>+100</b></span>
+      <span class="bad">Erro <b>−50</b></span>
+      <span>Duração <b>30s</b></span>
+    </div>
+    <button id="start-btn" type="button">Começar treino</button>
+    <p class="best" id="best-line">Melhor pontuação: <b id="best-score">0</b></p>
+  </div>
+
+  <div id="countdown" class="overlay hidden" aria-live="assertive">
+    <div id="count-ring"><span id="count-num">3</span></div>
+    <p class="count-hint">Posicione o mouse no centro</p>
+  </div>
+
+  <div id="game-area" class="hidden"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
